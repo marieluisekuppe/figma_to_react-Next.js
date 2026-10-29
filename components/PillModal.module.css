@@ -1,0 +1,20 @@
+.triggers {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.dialog {
+  max-width: none;
+  max-height: none;
+  margin: auto;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.dialog::backdrop {
+  background: rgb(22 22 26 / 56%);
+}

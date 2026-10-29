@@ -1,7 +1,15 @@
 import styles from "./Modal.module.css";
 
-// Figma: the component "Modal".
-// Open it with showModal() (step 1.1), and style it with your tokens (step 1.3).
-export default function Modal() {
-  return <dialog className={styles.modal}>Modal</dialog>;
+export default function Modal({ showSeparator = true }) {
+  return (
+    <article className={styles.modal} aria-labelledby="modal-card-title">
+      {showSeparator && <span className={styles.separator} aria-hidden="true" />}
+      <h3 id="modal-card-title" className={styles.title}>
+        Hick&apos;s Law
+      </h3>
+      <p className={styles.description}>
+        Jo flere valgmuligheder, jo længere tid tager det at vælge.
+      </p>
+    </article>
+  );
 }

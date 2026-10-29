@@ -8,16 +8,21 @@
  * - Font weights become numbers: Regular -> 400, Medium -> 500, Semi Bold -> 600
  */
 :root {
-  /* Color */
+  color-scheme: light;
 
-  /* Typography – the font itself is loaded in app/layout.js */
   --font-family-primary: var(--font-inter), sans-serif;
-
-  /* Spacing: gaps and paddings */
-
-  /* Sizes */
-
-  /* Border radius */
+  --color-primary: #ff3d8b;
+  --color-secondary: #473dff;
+  --color-neutral-white: #fff;
+  --color-neutral-grey-200: #d6d6d0;
+  --color-neutral-grey-800: #55554f;
+  --color-neutral-grey-900: #16161a;
+  --font-size-md: 18px;
+  --font-weight-medium: 500;
+  --btn-height-md: 46px;
+  --paddings-sm: 20px;
+  --border-radius-full: 9999px;
+  background: #d3d3d3;
 }
 
 * {
@@ -31,4 +36,5 @@ body {
   font-family: var(--font-family-primary);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background: var(--color-neutral-white);
 }
